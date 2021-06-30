@@ -113,8 +113,14 @@
 /*=============== services ==============*/
 
 .services {
-  height: 832px;
+  height: 657px;
   padding-top: 175px;
+
+  background-image: url(../images/services/grey-bg-img.png),
+    url(../images/services/green-bg-img.png);
+  background-repeat: no-repeat;
+  background-position: bottom 158px right 42px, bottom 106px right 0;
+  background-size: 301px 331px, 102px 436px;
 }
 
 .services-tittle {
@@ -292,6 +298,15 @@
   width: 1150px;
   height: 659px;
   padding-top: 99px;
+
+  background-image: url(../images/about/big-bg-img.png),
+    url(../images/about/grey-bg-about.png),
+    url(../images/about/green-bg-img.png);
+
+  background-repeat: no-repeat;
+  background-position: bottom 61px left 13px, left 0 bottom 0,
+    left 258px bottom 127px;
+  background-size: 301px 331px, 111px 454px, 190px 293px;
 }
 
 .about-title {
