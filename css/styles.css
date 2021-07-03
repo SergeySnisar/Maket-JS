@@ -113,16 +113,21 @@
 /*=============== services ==============*/
 
 .services {
-  height: 657px;
-  padding-top: 175px;
+  padding-top: 70px;
+  padding-bottom: 106px;
+}
 
+.services-container {
+  position: relative;
+  width: 1156px;
+  height: 656px;
+  padding-top: 125px;
   background-image: url(../images/services/grey-bg-img.png),
     url(../images/services/green-bg-img.png);
   background-repeat: no-repeat;
   background-position: bottom 158px right 42px, bottom 106px right 0;
   background-size: 301px 331px, 102px 436px;
 }
-
 .services-tittle {
   font-size: 25px;
   letter-spacing: -1px;
@@ -133,6 +138,24 @@
   text-align: center;
   margin: 0;
   margin-bottom: 148px;
+}
+
+.sv-tittle-position {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: -1;
+}
+.sv-tittle {
+  font-size: 162px;
+  letter-spacing: -8px;
+  line-height: 195px;
+  color: #f6f6f6;
+  font-weight: 800;
+  font-family: "Work Sans";
+  padding: 0;
+  margin: 0;
 }
 
 .services-list {
@@ -222,10 +245,11 @@
 /*================portfolio==============*/
 
 .portfolio {
+  position: relative;
   height: 975px;
   width: 1920px;
   background-color: #fafafa;
-  padding-top: 179px;
+  padding-top: 76px;
 }
 
 .portfolio-title {
@@ -238,6 +262,30 @@
   text-align: center;
   margin-top: 0;
   margin-bottom: 101px;
+}
+
+.pf-tittle-position {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 0;
+}
+
+.pf-tittle {
+  font-size: 162px;
+  letter-spacing: -8px;
+  line-height: 195px;
+  color: #ebeced;
+  font-weight: 800;
+  font-family: "Work Sans";
+  margin: 0;
+}
+
+.portfolio-wraper {
+  position: relative;
+  padding-top: 103px;
+  z-index: 5;
 }
 
 .portfolio-list {
@@ -289,15 +337,34 @@
 /*=============about===============*/
 
 .about {
-  height: 822px;
   max-width: 1920px;
   margin: 0 auto;
+  padding: 92px;
+  padding-bottom: 71px;
+}
+
+.ab-tittle-position {
+  position: absolute;
+  top: 0;
+  left: 354px;
+  z-index: -1;
+}
+
+.ab-tittle {
+  font-size: 162px;
+  letter-spacing: -8px;
+  line-height: 195px;
+  color: #f6f6f6;
+  font-weight: 800;
+  font-family: "Work Sans";
+  margin: 0;
 }
 
 .about-container {
+  position: relative;
   width: 1150px;
   height: 659px;
-  padding-top: 99px;
+  padding-top: 120px;
 
   background-image: url(../images/about/big-bg-img.png),
     url(../images/about/grey-bg-about.png),
