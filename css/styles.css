@@ -427,10 +427,33 @@
   height: 720px;
   background-color: #fafafa;
   margin: 0 auto;
+  padding: 88px;
+  position: relative;
+}
+
+.cn-tittle {
+  font-size: 162px;
+  letter-spacing: -8px;
+  line-height: 195px;
+  color: #ebeced;
+  font-weight: 800;
+  font-family: "Work Sans";
+  margin: 0;
+  padding: 0;
+}
+
+.cn-tittle-position {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 0;
 }
 
 .contact-container {
-  padding-top: 183px;
+  padding-top: 90px;
+  z-index: 1;
+  position: relative;
 }
 
 .contact-title {
