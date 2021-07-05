@@ -19,6 +19,21 @@
 
 .header {
   height: 91px;
+  justify-content: space-between;
+  display: flex;
+  padding-left: 14px;
+  padding-right: 101px;
+  align-items: center;
+}
+
+.site-nav {
+  border: 0px;
+  padding: 0;
+  margin: 0;
+  justify-content: space-between;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
 }
 
 /*=============== hello ==============*/
