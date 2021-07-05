@@ -24,9 +24,10 @@
   padding-left: 14px;
   padding-right: 101px;
   align-items: center;
+  position: relative;
 }
 
-.site-nav {
+.menu-button {
   border: 0px;
   padding: 0;
   margin: 0;
@@ -34,6 +35,16 @@
   font: inherit;
   color: inherit;
   background-color: transparent;
+}
+
+.site-nav {
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  right: 0;
+  width: 545px;
+  height: 1065px;
+  background-color: #2c4755;
 }
 
 /*=============== hello ==============*/
