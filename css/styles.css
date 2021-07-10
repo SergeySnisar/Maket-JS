@@ -317,7 +317,7 @@
 }
 
 .before-print::before {
-  content: " ";
+  content: "";
   display: inline-block;
   width: 38px;
   height: 37px;
@@ -326,7 +326,7 @@
 }
 
 .before-file::before {
-  content: " ";
+  content: "";
   display: inline-block;
   width: 38px;
   height: 37px;
@@ -335,7 +335,7 @@
 }
 
 .before-mesage::before {
-  content: " ";
+  content: "";
   display: inline-block;
   width: 39px;
   height: 36px;
@@ -344,7 +344,7 @@
 }
 
 .before-monic::before {
-  content: " ";
+  content: "";
   display: inline-block;
   width: 42px;
   height: 31px;
