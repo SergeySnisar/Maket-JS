@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./images/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 
 <body class="page">
@@ -41,9 +42,15 @@
                         <p class="site-nav-title">Get Social</p>
                     
                         <ul class="social-list list">
-                            <li class="social-list-item">Behance</li>
-                            <li class="social-list-item">Dribble</li>
-                            <li class="social-list-item">Twitter</li>
+                            <li class="social-list-item">
+                                <a href="#behance" class="link">Behance</a>
+                            </li>
+                            <li class="social-list-item">
+                                <a href="#dribble" class="link">Dribble</a>
+                            </li>
+                            <li class="social-list-item">
+                                <a href="#twitter" class="link">Twitter</a>
+                            </li>
                         </ul>
                     
                         <span class="web-title">&copy; leon.com 2019</span>
@@ -86,7 +93,7 @@
         <div class="services-container container">
             <h2 class="services-tittle">Don't be busy, be productive</h2>
             <div class="sv-tittle-position">
-                <p class="sv-tittle">services</p>
+                <p id="services" class="sv-tittle">services</p>
             </div>
             
             <div class="services-wraper">
@@ -181,7 +188,7 @@
         </div>
     </section>
 
-    <!-- <section class="contact">
+    <section class="contact">
         <div class="cn-tittle-position">
             <p class="cn-tittle">contact</p>
         </div>
@@ -193,25 +200,27 @@
                     <p class="contact-caption">Find us on social networks:</p>
                     <ul class="contact-list list">
                         <li class="contact-list-item">
-                            <a href="#">
-                                <img class="contact-link-img-dribble" src="./images/contact/google.png" alt="google"></a>
+                            <a id="behance" href="">
+                                <i class="fa fa-dribbble fa-2x " aria-hidden="true"></i>
+                            </a>
                         </li>
                         <li class="contact-list-item">
-                            <a href="#">
-                                <img class="contact-link-img-google" src="./images/contact/dribble.png" alt="dribble"></a>
+                            <a id="dribble" href="">
+                                <i class="fa fa-google-plus fa-2x" aria-hidden="true"></i>
+                            </a>
                         </li>
                         <li class="contact-list-item">
-                            <a href="#">
-                                <img class="contact-link-img-twitter" src="./images/contact/twitter.png" alt="twitter"></a>
+                            <a id="twitter" href="">
+                                <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
                         </li>
                     </ul>
                 </div>
         </div>
-    </section> -->
+    </section>
 
-    <!-- <section class="footer">
+    <section class="footer">
         <p class="footer-title">&copy; 2019 - <span class="footer-title-accent">Leon</span>,All Right Reserved</p>
-    </section> -->
+    </section>
 </body>
 
 </html>
