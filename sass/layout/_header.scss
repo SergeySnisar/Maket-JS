@@ -1,0 +1,153 @@
+/*=============== header ==============*/
+
+.header.container {
+  max-width: 320px;
+}
+
+.header {
+  height: 91px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-nav-wraper {
+  position: relative;
+}
+
+.site-nav-wraper:hover .site-nav {
+  opacity: 1;
+}
+
+.menu-button {
+  border: 0px;
+  padding: 0;
+  margin: 0;
+  justify-content: space-between;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+.site-nav {
+  opacity: 0;
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #2c4755;
+  padding-top: 15px;
+  padding-left: 30px;
+  padding-bottom: 30px;
+  overflow: scroll;
+}
+
+.close-button {
+  border: 0px;
+  padding: 0;
+  margin: 0;
+  justify-content: space-between;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  width: 19px;
+  height: 19px;
+  margin-bottom: 27px;
+}
+
+.site-nav-title {
+  font-size: 21px;
+  letter-spacing: -1px;
+  line-height: 35px;
+  color: #637988;
+  font-weight: 400;
+  margin: 0;
+}
+
+.site-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 29px;
+  letter-spacing: -1px;
+  line-height: 35px;
+  color: #ffffff;
+  font-weight: 400;
+  margin-bottom: 59px;
+}
+
+.site-list-item:hover,
+.site-list-item:focus {
+  color: #10cab7;
+}
+
+.contacts-item {
+  font-size: 21px;
+  letter-spacing: -1px;
+  line-height: 35px;
+  color: #ffffff;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 44px;
+}
+
+.contacts-item:hover,
+.contacts-item:focus {
+  color: #10cab7;
+}
+
+.social-list {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 200px;
+}
+
+.social-list-link {
+  font-size: 21px;
+  letter-spacing: -1px;
+  line-height: 35px;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+  color: #10cab7;
+}
+
+.web-title {
+  font-size: 15px;
+  letter-spacing: -1px;
+  line-height: 24px;
+  color: #637988;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 768px) {
+  .header.container {
+    max-width: 768px;
+  }
+
+  .site-nav {
+    width: 345px;
+    height: 1065px;
+    padding-top: 33px;
+    padding-left: 60px;
+    padding-bottom: 60px;
+  }
+  .social-list {
+    margin-bottom: 500px;
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .header.container {
+    max-width: 1170px;
+  }
+
+  .site-nav {
+    width: 545px;
+  }
+}

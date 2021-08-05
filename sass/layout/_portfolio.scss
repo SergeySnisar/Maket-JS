@@ -1,0 +1,137 @@
+/*================portfolio==============*/
+
+.portfolio.container {
+  max-width: 1920px;
+}
+
+.portfolio {
+  position: relative;
+  background-color: #fafafa;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  margin: 0 auto;
+}
+
+.pf-tittle-position {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 0;
+}
+
+.pf-tittle {
+  font-size: 70px;
+  letter-spacing: -8px;
+  line-height: 90px;
+  color: #ebeced;
+  font-weight: 800;
+  margin: 0;
+}
+
+.portfolio-wraper {
+  position: relative;
+  padding-top: 70px;
+  z-index: 5;
+}
+
+.portfolio-title {
+  font-size: 25px;
+  letter-spacing: -1px;
+  line-height: 35px;
+  color: #575757;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 80px;
+}
+
+.portfolio-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-list-item {
+  background-color: #ffffff;
+  width: 300px;
+  height: 450px;
+}
+
+.portfolio-list-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.portfolio-img {
+  width: 100%;
+  height: 300px;
+}
+
+.portfolio-list-title {
+  font-size: 20px;
+  line-height: 67px;
+  color: #1f2021;
+  font-weight: 800;
+  margin-left: 15px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.portfolio-list-descr {
+  font-size: 15px;
+  letter-spacing: -1px;
+  line-height: 27px;
+  color: #4d4c4c;
+  font-weight: 400;
+  margin-left: 15px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .pf-tittle-position {
+    top: 3%;
+  }
+
+  .pf-tittle {
+    font-size: 150px;
+    line-height: 150px;
+  }
+
+  .portfolio-wraper {
+    padding-top: 55px;
+  }
+
+  .portfolio-list {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .portfolio-list-item {
+    width: 250px;
+    height: 450px;
+  }
+
+  .portfolio-list-item:not(:last-child) {
+    margin-right: 15px;
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .portfolio {
+    height: 975px;
+    padding-top: 76px;
+  }
+
+  .portfolio-list-item {
+    width: 350px;
+    height: 502px;
+  }
+
+  .portfolio-list-item:not(:last-child) {
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
+}
