@@ -24,15 +24,8 @@
   z-index: -1;
 }
 
-.about-title {
-  font-size: 25px;
-  letter-spacing: -1px;
-  line-height: 35px;
-  color: #575757;
-  font-weight: 400;
-  text-align: center;
-  margin-bottom: 80px;
-  margin-top: 0;
+.ab-tittle {
+  color: $big-title-main-color;
 }
 
 .about-img {
@@ -48,7 +41,7 @@
 .about-title-descr {
   font-size: 20px;
   line-height: 40px;
-  color: #334752;
+  color: $secondary-discription-text-color;
   font-weight: 800;
   margin: 0;
 }
@@ -58,14 +51,14 @@
   display: inline-block;
   width: 270px;
   height: 2px;
-  background-color: #10cab7;
+  background-color: $accent-color;
 }
 
 .about-descr {
   font-size: 15px;
   letter-spacing: -1px;
   line-height: 32px;
-  color: #575757;
+  color: $section-title-color;
   font-weight: 400;
   margin: 0;
 }

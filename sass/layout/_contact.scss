@@ -5,7 +5,7 @@
 }
 
 .contact {
-  background-color: #fafafa;
+  background-color: $secondary-background-color;
   margin: 0 auto;
   padding-top: 70px;
   padding-bottom: 70px;
@@ -20,18 +20,13 @@
   z-index: 0;
 }
 
-.cn-tittle {
-  font-size: 70px;
-  letter-spacing: -8px;
-  line-height: 80px;
-  color: #ebeced;
-  font-weight: 800;
-  margin: 0;
-  padding: 0;
+.cn-title {
+  color: $big-title-secondary-color;
 }
 
 .contact-container.container {
   max-width: 320px;
+  margin: 0 auto;
 }
 
 .contact-container {
@@ -39,22 +34,11 @@
   position: relative;
 }
 
-.contact-title {
-  text-align: center;
-  font-size: 25px;
-  letter-spacing: -1px;
-  line-height: 35px;
-  color: #575757;
-  font-weight: 400;
-  margin-bottom: 50px;
-  margin-top: 0;
-}
-
 .contact-text {
   font-size: 25px;
   letter-spacing: -3px;
   line-height: 40px;
-  color: #2c4755;
+  color: $dark-green-bockground-color;
   font-weight: 800;
   margin: 0;
 }
@@ -64,7 +48,7 @@
   font-size: 25px;
   letter-spacing: -2px;
   line-height: 40px;
-  color: #10cab7;
+  color: $accent-color;
   font-weight: 800;
   margin-bottom: 56px;
 }
@@ -78,7 +62,7 @@
   font-size: 15px;
   letter-spacing: -1px;
   line-height: 27px;
-  color: #334752;
+  color: $secondary-discription-text-color;
   font-weight: 400;
   margin-top: 0;
   margin-bottom: 0;
@@ -98,27 +82,17 @@
 }
 
 .fa {
-  color: #2c4755;
+  color: $dark-green-bockground-color;
 }
 
 .fa:hover,
 .fa:focus {
-  color: #10cab7;
+  color: $accent-color;
 }
 
 @media screen and (min-width: 768px) {
   .contact-container.container {
     max-width: 768px;
-  }
-
-  .cn-tittle {
-    font-size: 162px;
-    letter-spacing: -8px;
-    line-height: 195px;
-    color: #ebeced;
-    font-weight: 800;
-    margin: 0;
-    padding: 0;
   }
 
   .cn-tittle-position {
@@ -130,27 +104,20 @@
   }
 
   .contact-container {
-    padding-top: 90px;
+    padding-top: 60px;
     z-index: 1;
     position: relative;
   }
 
   .contact-title {
-    text-align: center;
-    font-size: 25px;
-    letter-spacing: -1px;
-    line-height: 35px;
-    color: #575757;
-    font-weight: 400;
     margin-bottom: 151px;
-    margin-top: 0;
   }
 
   .contact-text {
     font-size: 55px;
     letter-spacing: -3px;
     line-height: 67px;
-    color: #2c4755;
+    color: $dark-green-bockground-color;
     font-weight: 800;
     margin: 0;
   }
@@ -160,7 +127,7 @@
     font-size: 50px;
     letter-spacing: -2px;
     line-height: 67px;
-    color: #10cab7;
+    color: $accent-color;
     font-weight: 800;
     margin-left: 45px;
     margin-bottom: 56px;
@@ -175,7 +142,7 @@
     font-size: 15px;
     letter-spacing: -1px;
     line-height: 27px;
-    color: #334752;
+    color: $secondary-discription-text-color;
     font-weight: 400;
     margin-left: 106px;
     margin-top: 0;
@@ -213,5 +180,9 @@
 @media screen and (min-width: 1170px) {
   .contact-container.container {
     max-width: 1170px;
+  }
+
+  .contact-container {
+    padding-top: 90px;
   }
 }
