@@ -1,0 +1,11 @@
+.list-item {
+  font-size: 29px;
+  letter-spacing: -1px;
+  line-height: 35px;
+  color: $main-background-color;
+  font-weight: 400;
+}
+.list-item:hover,
+.list-item:focus {
+  color: $accent-color;
+}

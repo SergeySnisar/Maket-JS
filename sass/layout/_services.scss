@@ -33,15 +33,6 @@
   transform: translate(-50%);
   z-index: -1;
 }
-.sv-tittle {
-  font-size: 70px;
-  letter-spacing: -8px;
-  line-height: 80px;
-  color: #f6f6f6;
-  font-weight: 800;
-  padding: 0;
-  margin: 0;
-}
 
 .services-list {
   display: flex;
@@ -135,11 +126,6 @@
     z-index: -1;
   }
 
-  .sv-tittle {
-    font-size: 150px;
-    line-height: 150px;
-  }
-
   .services-wraper {
     background-image: url(../images/services/green-bg-img.png);
     background-repeat: no-repeat;
@@ -170,6 +156,7 @@
 
   .services-container {
     height: 656px;
+    padding-top: 120px;
   }
 
   .services-wraper {
