@@ -10,13 +10,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.site-nav-wraper {
   position: relative;
 }
 
-.menu-button {
+.header__menu {
   border: 0px;
   padding: 0;
   margin: 0;
@@ -26,7 +23,7 @@
   background-color: transparent;
 }
 
-.site-nav {
+.nav {
   position: absolute;
   z-index: 5;
   top: 0;
@@ -40,7 +37,7 @@
   overflow: scroll;
 }
 
-.close-button {
+.nav__btn__close {
   border: 0px;
   padding: 0;
   margin: 0;
@@ -53,38 +50,32 @@
   margin-bottom: 27px;
 }
 
-.site-list {
-  list-style: none;
+.nav__list {
   margin: 0;
   padding: 0;
-  margin-bottom: 59px;
+  margin-bottom: 55px;
 }
 
-.contacts-item {
+.contacts {
   font-size: 21px;
   margin-top: 0;
-  margin-bottom: 44px;
 }
 
-.social-list {
-  padding: 0;
-  margin-top: 0;
-  margin-bottom: 200px;
-}
-
-.social-list-link {
+.socials {
   font-size: 21px;
 }
 
-.web-title {
+.nav__web__title {
+  display: inline-block;
   font-size: 15px;
   letter-spacing: -1px;
   line-height: 24px;
   color: $site-nav-title;
   font-weight: 400;
+  margin-top: 400px;
 }
 
-.is-hidden {
+.is__hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -96,16 +87,19 @@
     max-width: 768px;
   }
 
-  .site-nav {
+  .nav {
+    top: 91px;
+    right: 0;
     width: 345px;
     height: 1065px;
     padding-top: 33px;
     padding-left: 60px;
     padding-bottom: 60px;
   }
-  .social-list {
-    margin-bottom: 500px;
-  }
+
+  .nav__web__title {
+  margin-top: 450px;
+}
 }
 
 @media screen and (min-width: 1170px) {
@@ -113,7 +107,7 @@
     max-width: 1170px;
   }
 
-  .site-nav {
+  .nav {
     width: 545px;
   }
 }

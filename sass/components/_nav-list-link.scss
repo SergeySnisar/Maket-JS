@@ -1,11 +1,14 @@
-.list-item {
+.nav__list__link {
   font-size: 29px;
   letter-spacing: -1px;
   line-height: 35px;
   color: $main-background-color;
   font-weight: 400;
 }
-.list-item:hover,
-.list-item:focus {
+.nav__list__link:hover{
+  color: $accent-color;
+}
+
+.nav__list__link:focus {
   color: $accent-color;
 }

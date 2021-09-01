@@ -19,7 +19,7 @@ body {
   text-decoration: none;
 }
 
-.site-nav-title {
+.nav__title {
   font-size: 21px;
   letter-spacing: -1px;
   line-height: 35px;
@@ -28,7 +28,7 @@ body {
   margin: 0;
 }
 
-.list-item {
+.nav__list__link {
   font-size: 29px;
   letter-spacing: -1px;
   line-height: 35px;
@@ -36,8 +36,11 @@ body {
   font-weight: 400;
 }
 
-.list-item:hover,
-.list-item:focus {
+.nav__list__link:hover {
+  color: #10cab7;
+}
+
+.nav__list__link:focus {
   color: #10cab7;
 }
 
@@ -109,13 +112,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.site-nav-wraper {
   position: relative;
 }
 
-.menu-button {
+.header__menu {
   border: 0px;
   padding: 0;
   margin: 0;
@@ -127,7 +127,7 @@ body {
   background-color: transparent;
 }
 
-.site-nav {
+.nav {
   position: absolute;
   z-index: 5;
   top: 0;
@@ -141,7 +141,7 @@ body {
   overflow: scroll;
 }
 
-.close-button {
+.nav__btn__close {
   border: 0px;
   padding: 0;
   margin: 0;
@@ -156,38 +156,32 @@ body {
   margin-bottom: 27px;
 }
 
-.site-list {
-  list-style: none;
+.nav__list {
   margin: 0;
   padding: 0;
-  margin-bottom: 59px;
+  margin-bottom: 55px;
 }
 
-.contacts-item {
+.contacts {
   font-size: 21px;
   margin-top: 0;
-  margin-bottom: 44px;
 }
 
-.social-list {
-  padding: 0;
-  margin-top: 0;
-  margin-bottom: 200px;
-}
-
-.social-list-link {
+.socials {
   font-size: 21px;
 }
 
-.web-title {
+.nav__web__title {
+  display: inline-block;
   font-size: 15px;
   letter-spacing: -1px;
   line-height: 24px;
   color: #637988;
   font-weight: 400;
+  margin-top: 400px;
 }
 
-.is-hidden {
+.is__hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -199,15 +193,17 @@ body {
   .header.container {
     max-width: 768px;
   }
-  .site-nav {
+  .nav {
+    top: 91px;
+    right: 0;
     width: 345px;
     height: 1065px;
     padding-top: 33px;
     padding-left: 60px;
     padding-bottom: 60px;
   }
-  .social-list {
-    margin-bottom: 500px;
+  .nav__web__title {
+    margin-top: 450px;
   }
 }
 
@@ -215,7 +211,7 @@ body {
   .header.container {
     max-width: 1170px;
   }
-  .site-nav {
+  .nav {
     width: 545px;
   }
 }
@@ -232,7 +228,7 @@ body {
   margin: 0 auto;
 }
 
-.main-title {
+.hello__title {
   font-size: 55px;
   letter-spacing: -3px;
   line-height: 67px;
@@ -243,7 +239,7 @@ body {
   text-align: center;
 }
 
-.hello-descr {
+.hello__descr {
   font-size: 20px;
   letter-spacing: -1px;
   line-height: 32px;
@@ -262,7 +258,7 @@ body {
   margin: 0 auto;
 }
 
-.work-list {
+.work__list {
   margin: 0;
   padding: 0;
   display: -webkit-box;
@@ -280,7 +276,7 @@ body {
           align-items: center;
 }
 
-.work-list-item {
+.work__list__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -298,7 +294,7 @@ body {
   height: 300px;
 }
 
-.wokr-list-title {
+.wokr__list__title {
   font-size: 20px;
   letter-spacing: -1px;
   line-height: 67px;
@@ -307,7 +303,7 @@ body {
   margin: 0;
 }
 
-.work-descr {
+.work__descr {
   font-size: 15px;
   letter-spacing: -1px;
   line-height: 32px;
@@ -320,23 +316,23 @@ body {
   margin: 0;
 }
 
-.lamp-img {
+.work__lamp__img {
   width: 71px;
   height: 72px;
 }
 
-.bottle-img {
+.work__bottle__img {
   width: 61px;
   height: 77px;
 }
 
-.globe-img {
+.work__globe__img {
   width: 64px;
   height: 73px;
 }
 
 @media screen and (min-width: 768px) {
-  .work-list-item {
+  .work__list__item {
     width: 640px;
   }
 }
@@ -345,7 +341,7 @@ body {
   .work {
     width: 1170px;
   }
-  .work-list {
+  .work__list {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -357,7 +353,7 @@ body {
         -ms-flex-align: center;
             align-items: center;
   }
-  .work-list-item {
+  .work__list__item {
     height: 400px;
   }
 }
