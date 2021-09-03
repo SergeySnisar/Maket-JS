@@ -8,12 +8,17 @@
   margin: 0 auto;
   padding-top: 70px;
   padding-bottom: 71px;
-}
 
-.about__container {
-  position: relative;
-  width: 320px;
-  padding-top: 55px;
+  &__container {
+    position: relative;
+    width: 320px;
+    padding-top: 55px;
+  }
+
+  &__img {
+    width: 310px;
+    margin-bottom: 20px;
+  }
 }
 
 .ab__tittle__position {
@@ -28,39 +33,34 @@
   color: $big-title-main-color;
 }
 
-.about-img {
-  width: 310px;
-  margin-bottom: 20px;
-}
-
 .about__descr {
   width: 300px;
   margin: 0 auto;
-}
 
-.about__descr__title {
-  font-size: 20px;
-  line-height: 40px;
-  color: $secondary-discription-text-color;
-  font-weight: 800;
-  margin: 0;
-}
+  &__title {
+    font-size: 20px;
+    line-height: 40px;
+    color: $secondary-discription-text-color;
+    font-weight: 800;
+    margin: 0;
+  }
 
-.about__descr__title::after {
-  content: " ";
-  display: inline-block;
-  width: 270px;
-  height: 2px;
-  background-color: $accent-color;
-}
+  &__title::after {
+    content: " ";
+    display: inline-block;
+    width: 270px;
+    height: 2px;
+    background-color: $accent-color;
+  }
 
-.about__descr__text {
-  font-size: 15px;
-  letter-spacing: -1px;
-  line-height: 32px;
-  color: $section-title-color;
-  font-weight: 400;
-  margin: 0;
+  &__text {
+    font-size: 15px;
+    letter-spacing: -1px;
+    line-height: 32px;
+    color: $section-title-color;
+    font-weight: 400;
+    margin: 0;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -87,12 +87,12 @@
     z-index: -1;
   }
 
-  .about__wraper {
+  .about__wrapper {
     display: flex;
     justify-content: space-between;
   }
 
-  .about-img {
+  .about__img {
     width: 301px;
     height: 331px;
     margin-top: 50px;
@@ -111,33 +111,33 @@
 
   .about {
     padding-top: 92px;
-  }
 
-  .about__container {
-    width: 1170px;
-    height: 659px;
-    padding-top: 120px;
+    &__container {
+      width: 1170px;
+      height: 659px;
+      padding-top: 120px;
 
-    background-image: url(../images/about/grey-bg-about.png),
-      url(../images/about/green-bg-img.png);
+      background-image: url(../images/about/grey-bg-about.png),
+        url(../images/about/green-bg-img.png);
 
-    background-repeat: no-repeat;
-    background-position: left 0 bottom 60px, left 258px bottom 187px;
-    background-size: 111px 454px, 190px 293px;
-  }
+      background-repeat: no-repeat;
+      background-position: left 0 bottom 60px, left 258px bottom 187px;
+      background-size: 111px 454px, 190px 293px;
+    }
 
-  .about__title {
-    margin-bottom: 159px;
-  }
+    &__title {
+      margin-bottom: 159px;
+    }
 
-  .about-img {
-    width: 301px;
-    height: 331px;
-    margin-top: 0;
-  }
+    &__img {
+      width: 301px;
+      height: 331px;
+      margin-top: 0;
+    }
 
-  .about__descr {
-    width: 565px;
-    height: 298px;
+    &__descr {
+      width: 565px;
+      height: 298px;
+    }
   }
 }

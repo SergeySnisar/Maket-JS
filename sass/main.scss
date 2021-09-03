@@ -1,11 +1,12 @@
 @import "./base/base";
 @import "./variables//variables";
-@import "./components/site-nav-title";
+@import "./components/nav-title";
 @import "./components/nav-list-link";
 @import "./components/big-title";
 @import "./components/main-section-title";
 @import "./components/description-title";
 @import "./components/description-text";
+@import "./components//before";
 @import "./layout/header";
 @import "./layout/hello";
 @import "./layout/work";

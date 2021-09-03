@@ -10,6 +10,29 @@
   padding-top: 70px;
   padding-bottom: 70px;
   position: relative;
+
+  &__container {
+    z-index: 1;
+    position: relative;
+  }
+  &__text {
+    font-size: 25px;
+    letter-spacing: -3px;
+    line-height: 40px;
+    color: $dark-green-bockground-color;
+    font-weight: 800;
+    margin: 0;
+  }
+
+  &__link {
+    display: inline-block;
+    font-size: 25px;
+    letter-spacing: -2px;
+    line-height: 40px;
+    color: $accent-color;
+    font-weight: 800;
+    margin-bottom: 56px;
+  }
 }
 
 .cn__tittle__position {
@@ -29,31 +52,7 @@
   margin: 0 auto;
 }
 
-.contact__container {
-  z-index: 1;
-  position: relative;
-}
-
-.contact__text {
-  font-size: 25px;
-  letter-spacing: -3px;
-  line-height: 40px;
-  color: $dark-green-bockground-color;
-  font-weight: 800;
-  margin: 0;
-}
-
-.contact__link {
-  display: inline-block;
-  font-size: 25px;
-  letter-spacing: -2px;
-  line-height: 40px;
-  color: $accent-color;
-  font-weight: 800;
-  margin-bottom: 56px;
-}
-
-.contact__list__wraper {
+.contact__list__wrapper {
   display: flex;
   align-items: center;
 }
@@ -75,19 +74,19 @@
   padding: 0;
   margin-top: 0;
   margin-bottom: 0;
-}
 
-.contact__list__item:not(:last-child) {
-  margin-right: 29px;
+  &__item:not(:last-child) {
+    margin-right: 29px;
+  }
 }
 
 .fa {
   color: $dark-green-bockground-color;
-}
 
-.fa:hover,
-.fa:focus {
-  color: $accent-color;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -133,7 +132,7 @@
     margin-bottom: 56px;
   }
 
-  .contact__list__wraper {
+  .contact__list__wrapper {
     display: flex;
     align-items: center;
   }
@@ -156,10 +155,10 @@
     padding: 0;
     margin-top: 0;
     margin-bottom: 0;
-  }
 
-  .contact__list__item:not(:last-child) {
-    margin-right: 29px;
+    &__item:not(:last-child) {
+      margin-right: 29px;
+    }
   }
 
   .contact-link-img-dribble {
@@ -171,6 +170,7 @@
     width: 22px;
     height: 19px;
   }
+  
   .contact-link-img-twitter {
     width: 22px;
     height: 17px;

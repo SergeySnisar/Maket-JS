@@ -9,24 +9,25 @@
   padding-top: 50px;
   background-color: $big-title-main-color;
   margin: 0 auto;
-}
-.hello__title {
-  font-size: 55px;
-  letter-spacing: -3px;
-  line-height: 67px;
-  margin-top: 0px;
-  margin-bottom: 62px;
-  color: $accent-color;
-  font-weight: 800;
-  text-align: center;
-}
 
-.hello__descr {
-  font-size: 20px;
-  letter-spacing: -1px;
-  line-height: 32px;
-  margin: 0px;
-  color: $dark-green-bockground-color;
-  font-weight: 400;
-  text-align: center;
+  &__title {
+    font-size: 55px;
+    letter-spacing: -3px;
+    line-height: 67px;
+    margin-top: 0px;
+    margin-bottom: 62px;
+    color: $accent-color;
+    font-weight: 800;
+    text-align: center;
+  }
+
+  &__descr {
+    font-size: 20px;
+    letter-spacing: -1px;
+    line-height: 32px;
+    margin: 0px;
+    color: $dark-green-bockground-color;
+    font-weight: 400;
+    text-align: center;
+  }
 }

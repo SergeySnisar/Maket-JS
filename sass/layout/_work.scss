@@ -6,6 +6,34 @@
 
 .work {
   margin: 0 auto;
+
+  &__descr {
+    font-size: 15px;
+    letter-spacing: -1px;
+    line-height: 32px;
+    color: $section-title-color;
+    font-weight: 400;
+    text-align: center;
+    display: inline-block;
+    width: 269px;
+    height: 75px;
+    margin: 0;
+  }
+
+  &__lamp__img {
+    width: 71px;
+    height: 72px;
+  }
+
+  &__bottle__img {
+    width: 61px;
+    height: 77px;
+  }
+
+  &__globe__img {
+    width: 64px;
+    height: 73px;
+  }
 }
 
 .work__list {
@@ -15,52 +43,24 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
 
-.work__list__item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 320px;
-  height: 300px;
-}
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    height: 300px;
+  }
 
-.wokr__list__title {
-  font-size: 20px;
-  letter-spacing: -1px;
-  line-height: 67px;
-  color: $dark-green-bockground-color;
-  font-weight: 800;
-  margin: 0;
-}
-
-.work__descr {
-  font-size: 15px;
-  letter-spacing: -1px;
-  line-height: 32px;
-  color: $section-title-color;
-  font-weight: 400;
-  text-align: center;
-  display: inline-block;
-  width: 269px;
-  height: 75px;
-  margin: 0;
-}
-
-.work__lamp__img {
-  width: 71px;
-  height: 72px;
-}
-
-.work__bottle__img {
-  width: 61px;
-  height: 77px;
-}
-
-.work__globe__img {
-  width: 64px;
-  height: 73px;
+  &__title {
+    font-size: 20px;
+    letter-spacing: -1px;
+    line-height: 67px;
+    color: $dark-green-bockground-color;
+    font-weight: 800;
+    margin: 0;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -72,15 +72,15 @@
 @media screen and (min-width: 1170px) {
   .work {
     width: 1170px;
-  }
 
-  .work__list {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
+  &__list {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
 
-  .work__list__item {
+  &__list__item {
     height: 400px;
+    }
   }
 }

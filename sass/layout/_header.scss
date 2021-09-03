@@ -11,16 +11,16 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
-}
 
-.header__menu {
-  border: 0px;
-  padding: 0;
-  margin: 0;
-  justify-content: space-between;
-  font: inherit;
-  color: inherit;
-  background-color: transparent;
+  &__menu {
+    border: 0px;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+  }
 }
 
 .nav {
@@ -35,25 +35,35 @@
   padding-left: 30px;
   padding-bottom: 30px;
   overflow: scroll;
-}
 
-.nav__btn__close {
-  border: 0px;
-  padding: 0;
-  margin: 0;
-  justify-content: space-between;
-  font: inherit;
-  color: inherit;
-  background-color: transparent;
-  width: 19px;
-  height: 19px;
-  margin-bottom: 27px;
-}
+  &__btn__close {
+    border: 0px;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    width: 19px;
+    height: 19px;
+    margin-bottom: 27px;
+  }
 
-.nav__list {
-  margin: 0;
-  padding: 0;
-  margin-bottom: 55px;
+  &__list {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 55px;
+  }
+
+  &__web__title {
+    display: inline-block;
+    font-size: 15px;
+    letter-spacing: -1px;
+    line-height: 24px;
+    color: $site-nav-title;
+    font-weight: 400;
+    margin-top: 400px;
+  }
 }
 
 .contacts {
@@ -63,16 +73,6 @@
 
 .socials {
   font-size: 21px;
-}
-
-.nav__web__title {
-  display: inline-block;
-  font-size: 15px;
-  letter-spacing: -1px;
-  line-height: 24px;
-  color: $site-nav-title;
-  font-weight: 400;
-  margin-top: 400px;
 }
 
 .is__hidden {
@@ -95,11 +95,11 @@
     padding-top: 33px;
     padding-left: 60px;
     padding-bottom: 60px;
-  }
 
-  .nav__web__title {
-  margin-top: 450px;
-}
+    &__web__title {
+      margin-top: 450px;
+    }
+  }
 }
 
 @media screen and (min-width: 1170px) {
